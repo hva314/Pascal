@@ -1,0 +1,103 @@
+<?xml version="1.0"?>
+<CONFIG>
+  <ProjectSession>
+    <PathDelim Value="\"/>
+    <Version Value="9"/>
+    <BuildModes Active="Default"/>
+    <Units Count="10">
+      <Unit0>
+        <Filename Value="project1.lpr"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="project1"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="1"/>
+        <CursorPos X="21" Y="7"/>
+        <UsageCount Value="122"/>
+      </Unit0>
+      <Unit1>
+        <Filename Value="chunhat.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="chunhat"/>
+        <IsVisibleTab Value="True"/>
+        <EditorIndex Value="3"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="1"/>
+        <CursorPos X="1" Y="1"/>
+        <UsageCount Value="122"/>
+        <Loaded Value="True"/>
+      </Unit1>
+      <Unit2>
+        <Filename Value="bonchuso.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="bonchuso"/>
+        <UsageCount Value="122"/>
+      </Unit2>
+      <Unit3>
+        <Filename Value="chuso.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="chuso"/>
+        <UsageCount Value="122"/>
+      </Unit3>
+      <Unit4>
+        <Filename Value="dientich.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="dientich"/>
+        <UsageCount Value="122"/>
+      </Unit4>
+      <Unit5>
+        <Filename Value="phuongtrinh.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="phuongtrinh"/>
+        <UsageCount Value="122"/>
+      </Unit5>
+      <Unit6>
+        <Filename Value="solonnhat.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="solonnhat"/>
+        <EditorIndex Value="2"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="1"/>
+        <CursorPos X="1" Y="1"/>
+        <UsageCount Value="122"/>
+        <Loaded Value="True"/>
+      </Unit6>
+      <Unit7>
+        <Filename Value="tongchuso.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="tongchuso"/>
+        <UsageCount Value="122"/>
+      </Unit7>
+      <Unit8>
+        <Filename Value="vd1.1.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="vd1"/>
+        <EditorIndex Value="0"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="1"/>
+        <CursorPos X="5" Y="2"/>
+        <UsageCount Value="122"/>
+        <Loaded Value="True"/>
+      </Unit8>
+      <Unit9>
+        <Filename Value="vd1.2.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="vd2"/>
+        <EditorIndex Value="1"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="1"/>
+        <CursorPos X="1" Y="20"/>
+        <UsageCount Value="122"/>
+        <Loaded Value="True"/>
+      </Unit9>
+    </Units>
+    <General>
+      <ActiveWindowIndexAtStart Value="0"/>
+    </General>
+    <JumpHistory Count="1" HistoryIndex="0">
+      <Position1>
+        <Filename Value="chunhat.pas"/>
+        <Caret Line="1" Column="1" TopLine="1"/>
+      </Position1>
+    </JumpHistory>
+  </ProjectSession>
+</CONFIG>

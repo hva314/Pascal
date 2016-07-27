@@ -1,0 +1,37 @@
+program daynhiphan;
+
+var     i,j,n,k: integer;
+        f: text;
+        x: array[1..10000] of integer;
+
+procedure input;
+
+   var  f: text;
+
+   begin
+        assign(f,'NHIPHAN.INP'); reset(f);
+        readln(f,n);
+        close(f);
+   end;
+
+BEGIN
+
+        input;
+
+        assign(f,'NHIPHAN.OUT'); rewrite(f);
+        i:=n;
+
+                while (i>0) and (x[i]=1) do dec(i);
+                if i>0 then
+                        begin
+                                x[i]:=1;
+                                for j:=i+1 to n do x[j]:=0;
+
+                        end;
+                for k:=1 to n do write(f,x[k]);
+                                writeln(f);
+
+
+        close(f);
+
+END.

@@ -1,0 +1,27 @@
+uses crt;
+
+BEGIN
+
+        clrscr;
+        writeln('        ษอออออออออออออออออออออออออออออออออออออออออออป ');
+        writeln('        บ                                           บ ');
+        writeln('        บ                                           บ ');
+        writeln('        บ                                           บ ');
+        writeln('        บ                                           บ ');
+        writeln('        บ                                           บ ');
+        writeln('        บ                                           บ ');
+        writeln('        บ                                           บ ');
+        writeln('        บ                                           บ ');
+        writeln('        บ                                           บ ');
+        writeln('        บ                                           บ ');
+        writeln('        บ                                           บ ');
+        writeln('        บ                                           บ ');
+        writeln('        บ                                           บ ');
+        writeln('        บ                                           บ ');
+        writeln('        บ                                           บ ');
+        writeln('        บ                                           บ ');
+        writeln('        บ                                           บ ');
+        writeln('        ศอออออออออออออออออออออออออออออออออออออออออออผ ');
+        readln;
+
+END.

@@ -1,0 +1,20 @@
+uses crt;
+var     n,n2,n3 :integer;
+
+BEGIN
+
+        clrscr;
+        write('Nhap vao so n co 4 chu so: '); readln(n);
+
+        if (n>=1000) and (n<=9999) then
+                begin
+                        n2 := (n mod 1000) div 100;
+                        n3 := (n mod 100) div 10;
+                        writeln('Chu so thu hai la ',n2,', chu so thu ba la ',n3);
+                end
+        else
+                writeln('Chi duoc nhap so co 4 chu so!');
+
+        readln;
+
+END.

@@ -1,0 +1,67 @@
+program balo1;
+
+var     n,w,i: integer;
+        f: text;
+        a: array[1..10000] of integer;
+        chon: array[1..10000] of boolean;
+        fx: array[1..10000,1..10000] of integer;
+
+function max(a,b: integer): integer;
+
+   begin
+        if a>b then max:=a else max:=b;
+   end;
+
+procedure taobang;
+
+var     i,j: integer;
+
+   begin
+        for i:=1 to w do
+                if a[1]<=i then fx[1,i]:=a[1] else fx[1,i]:=0;
+
+        for i:=2 to n do
+                for j:=1 to w do
+                        if j>=a[i] then
+                                fx[i,j]:= max(fx[i-1,j-a[i]] + a[i], fx[i-1,j])
+                        else fx[i,j]:= fx[i-1,j];
+
+
+   end;
+
+procedure trabang;
+
+var  k,v: integer;
+
+   begin
+        k:=n;
+        v:=w;
+        fillchar(chon, sizeof(chon), false);
+        repeat
+           begin
+                while fx[k,v]=fx[k-1,v] do dec(k);
+                chon[k]:=true;
+                v:=fx[i,v]-a[i];
+           end;
+        until v=0;
+
+
+   end;
+
+BEGIN
+
+        assign(f,'balo1.inp'); reset(f);
+                readln(f,n,w);
+                for i:=1 to n do read(f,a[i]);
+        close(f);
+
+        taobang;
+        trabang;
+
+        assign(f,'balo2.inp'); rewrite(f);
+                writeln(f,fx[n,w]);
+                for i:=1 to n do if chon[i] then write(f,i,' ');
+        close(f);
+
+
+END.

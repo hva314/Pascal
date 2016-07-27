@@ -1,0 +1,51 @@
+{Tim nghiem pt bac 4 trong khoang [m;n] cho truoc}
+
+var     a,b,c,d,e,x: real;
+        m,n,p: real;
+        f: text;
+
+function func(x:real) :real;
+   begin
+        func:=(a*x*x*x*x+b*x*x*x+c*x*x+d*x+e);
+   end;
+
+BEGIN
+
+        assign(f,'NHAP.INP'); reset(f);
+        read(f,a); read(f,b); read(f,c); read(f,d); read(f,e);
+        readln(f);
+        read(f,m); read(f,n);
+        close(f);
+
+        assign(f,'XUAT.OUT'); rewrite(f);
+
+        if (func(m)*func(n))<0 then
+           begin
+                writeln(f,'khong co nghiem trong khoang [',m:0:0,';',n:0:0,']');
+                close(f);
+                exit;
+           end;
+
+        while abs(func(m)-func(n)) > 0.00001 do
+           begin
+                p:=(m+n)/2;
+
+                if func(m)*func(n)=0 then
+                   begin
+                        if func(m)=0 then writeln(f,m:0:5);
+                        if func(n)=0 then writeln(f,n:0:5)
+                        else writeln(f,m:0:5,' ',n:0:5);
+                        close(f);
+                        exit;
+                   end;
+
+                if (func(m)*func(p))>0 then n:=p else m:=p;
+           end;
+
+        x:= (m+n)/2;
+
+        writeln(f,x:0:5);
+
+        close(f);
+
+END.
